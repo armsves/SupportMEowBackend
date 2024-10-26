@@ -1,0 +1,28 @@
+table:
+  name: launchpad_mint_reservation
+  schema: public
+object_relationships:
+  - name: launchpad
+    using:
+      foreign_key_constraint_on: launchpad_id
+  - name: stage
+    using:
+      foreign_key_constraint_on: stage_id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - address
+        - collection_id
+        - date_created
+        - id
+        - is_expired
+        - is_minted
+        - is_random
+        - launchpad_id
+        - metadata
+        - stage_id
+        - token_id
+      filter: {}
+      allow_aggregations: true
+    comment: ""

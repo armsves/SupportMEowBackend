@@ -1,0 +1,7 @@
+{
+  "name": "asteroid-protocol",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

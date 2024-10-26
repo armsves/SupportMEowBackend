@@ -1,0 +1,6 @@
+example
+src/zeus/**/*.ts
+cjs
+esm
+src/proto-types
+contracts
